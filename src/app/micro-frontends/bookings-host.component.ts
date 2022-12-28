@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class BookingsHostComponent implements OnInit{
     ngOnInit() {
-        // this.load('http://localhost:4201/main_old.js');
+        // this.load('http://localhost:4201/main_child.js');
     }
  
     // load(url: string): Promise<void> {

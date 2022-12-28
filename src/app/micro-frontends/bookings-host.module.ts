@@ -5,7 +5,7 @@ import { LoadMicroFrontendGuard } from "./load-micro-frontend.guard";
 import { MicroFrontendRoutingDirective } from "./micro-frontend-routing.directive";
 
 @NgModule({
-    declarations: [BookingsHostComponent, MicroFrontendRoutingDirective],
+    declarations: [BookingsHostComponent,  MicroFrontendRoutingDirective],
     imports: [
         RouterModule.forChild([
             {
@@ -13,7 +13,7 @@ import { MicroFrontendRoutingDirective } from "./micro-frontend-routing.directiv
                 component: BookingsHostComponent,
                 canActivate: [LoadMicroFrontendGuard],
                 data: {
-                    bundleUrl: 'http://localhost:4201/main_old.js'
+                    bundleUrl: 'http://localhost:4201/main_child.js'
                 }
             }
        ])
